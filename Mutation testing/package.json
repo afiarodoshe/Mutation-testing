@@ -1,0 +1,30 @@
+{
+  "name": "new-folder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageRrepoters": [
+      "lcov"
+    ],
+    "coverageDirectory": "./code-coverage-report/",
+    "reporters": [
+      "default",
+      "./node_modules/jest-html-reporters"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@stryker-mutator/core": "^5.6.1",
+    "jest": "^27.5.1",
+    "jest-html-reporters": "^3.0.6"
+  }
+}
